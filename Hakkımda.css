@@ -181,10 +181,6 @@ body{
       font-size: 60px;
       text-align: center;
     }
-    .cursor-dot,
-    .cursor-outline{
-        display: none;
-    }
     .box{
         border-radius: 20px;
     }
