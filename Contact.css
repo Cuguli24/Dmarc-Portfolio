@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+body{
+    font-family: "Poppins";
+    background-image: url(Pictures/richard-horvath-_nWaeTF6qo0-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    cursor: none;
+}
+#linkler{
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.600);
+    height: 7vh;   
+    box-sizing: border-box;
+}
+
+#yazıli{
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#yazıli a{
+    text-decoration: none;
+    font-family: poppins;
+    font-size: 16px;
+    color: white;
+    margin: 0 15px;
+    position: relative;
+    letter-spacing: 0.5px;
+    cursor: none;
+}
+#yazıli a:after{
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -3px;
+    transition: 0.3s;
+}
+#yazıli a:hover:after{
+    width: 100%;
+}
+#baş{
+    cursor: none;
+    margin-left: 30px;
+}
+.cursor-dot{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+.cursor-outline{
+    width: 40px;
+    height: 40px;
+    border: 2px solid hsla(0, 20%, 100%, 0.5);
+
+}
+.cursor-dot,.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index:1;
+    pointer-events: none;
+}
+.contact-container{
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 30px;
+    padding: 30px;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.700);
+    border-radius: 15px;
+    padding:20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: #666;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+.contact-inputs:focus{
+    border: 2px solid rgb(0, 102, 255);
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(270deg,rgb(0, 102, 235),rgb(0, 68, 255));
+    cursor: none;
+    transition: 1.5s;
+}
+.contact-left button:hover{
+    box-shadow: 0 8px 32px blue;
+}
+.contact-left button img{
+    height: 15px;
+}
+.contact-right img{
+    width: 500px;
+}
+@media (max-width:1000px) {
+    .contact-inputs{
+        width: 80vw;
+    }
+    .contact-right{
+        display: none;
+    }
+    .contact-container{
+        padding: 0;
+    }
+    .title {
+        font-size: 60px;
+        text-align: center;
+      }
+      .cursor-dot,
+      .cursor-outline{
+          display: none;
+      }
+      .links {
+        justify-content: center;
+      }
+      #linkler {
+        padding: 16px 10px;
+      }
+      #linkler #yazıli a {
+        font-size: 12px;
+      }
+      #linkler #yazıli{
+        margin: 0;
+      }
+      #linkler #baş {
+        width: 80px;
+      }
+}
