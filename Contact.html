@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="icon" href="Pictures/image.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    <div id="linkler">
+        <a href="Hakkımda.html" id="baş"><img width="40px" height="30px" src="Pictures/dmarc.png"></a>
+        <div id="yazıli">
+            <a id="projects" href="Projects.html">Projects</a>
+            <a id="contact" href="Contact.html">Contact</a>
+        </div>        
+    </div>
+    <div class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="b4acb624-5acf-403f-a340-60d1a47f94b8">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="fake@gmail.com" class="contact-inputs" required>
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Submit <img src="Pictures/Right.png"></button>
+        </form>
+
+        <div class="contact-right">
+            <img src="Pictures/amico.png">
+        </div>
+    </div>
+</body>
+<script src="Contact.js"></script>
+</html>
